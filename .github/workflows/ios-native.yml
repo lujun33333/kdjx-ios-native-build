@@ -46,7 +46,7 @@ jobs:
               info=plistlib.load(stream)
           assert not any(name.startswith('UIMainStoryboardFile') for name in info)
           assert info['UILaunchStoryboardName']=='LaunchScreen'
-          assert info['CFBundleVersion']=='201'
+          assert info['CFBundleVersion']=='202'
           PY
           ditto "$app" package/Payload/$(basename "$app")
           cd package
