@@ -25,6 +25,7 @@ jobs:
                   assert entry.isfile() and not entry.name.startswith('/') and '..' not in entry.name.split('/')
               archive.extractall('native')
           PY
+          if [ -d native_overrides ]; then cp -R native_overrides/. native/; fi
       - name: Compile iPhone arm64 native executable
         run: |
           set -o pipefail
