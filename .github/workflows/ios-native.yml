@@ -40,6 +40,14 @@ jobs:
           mkdir -p package/Payload
           app=$(find "$RUNNER_TEMP/kdjx-build" -maxdepth 3 -name '*.app' -type d | head -1)
           test -n "$app"
+          python3 - "$app/Info.plist" <<'PY'
+          import plistlib,sys
+          with open(sys.argv[1], 'rb') as stream:
+              info=plistlib.load(stream)
+          assert not any(name.startswith('UIMainStoryboardFile') for name in info)
+          assert info['UILaunchStoryboardName']=='LaunchScreen'
+          assert info['CFBundleVersion']=='201'
+          PY
           ditto "$app" package/Payload/$(basename "$app")
           cd package
           zip -qr ../kdjx-native-unsigned.ipa Payload
