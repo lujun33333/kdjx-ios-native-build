@@ -728,11 +728,8 @@
 			files = (
 				1AF87BAA1F6F8733007BE51C /* LaunchScreen.storyboard in Resources */,
 				BE1CD8B12369AD7F0035D85B /* LaunchScreenBackground.png in Resources */,
-				04C58F85244F53310056A053 /* repository in Resources */,
 				1ACE45A31FC3F2D000F87E53 /* Images.xcassets in Resources */,
-				BE8B9C8E23685288007FEBFF /* GavegameSDKConfig.plist in Resources */,
 				BE8B9C9023685288007FEBFF /* Resources.bundle in Resources */,
-				04C58F81244F52DC0056A053 /* res in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
