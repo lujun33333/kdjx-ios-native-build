@@ -29,7 +29,8 @@ jobs:
       - name: Compile iPhone arm64 native executable
         run: |
           set -o pipefail
-          xcodebuild -project native/frameworks/pokemon_proj_tc_qd/proj.ios_mac/MyLuaGame.xcodeproj -target MyLuaGame-mobile -configuration Release -sdk iphoneos ARCHS=arm64 VALID_ARCHS=arm64 ONLY_ACTIVE_ARCH=YES IPHONEOS_DEPLOYMENT_TARGET=13.0 CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO SYMROOT="$RUNNER_TEMP/kdjx-build" OBJROOT="$RUNNER_TEMP/kdjx-obj" 2>&1 | tee native-build.log
+          xcodebuild -project native/frameworks/cocos2d-x/external/breakpad/client/ios/Breakpad.xcodeproj -target Breakpad -configuration Release -sdk iphoneos ARCHS=arm64 VALID_ARCHS=arm64 ONLY_ACTIVE_ARCH=YES IPHONEOS_DEPLOYMENT_TARGET=13.0 CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO SYMROOT="$RUNNER_TEMP/kdjx-build" OBJROOT="$RUNNER_TEMP/kdjx-obj" 2>&1 | tee native-build.log
+          xcodebuild -project native/frameworks/pokemon_proj_tc_qd/proj.ios_mac/MyLuaGame.xcodeproj -target MyLuaGame-mobile -configuration Release -sdk iphoneos ARCHS=arm64 VALID_ARCHS=arm64 ONLY_ACTIVE_ARCH=YES IPHONEOS_DEPLOYMENT_TARGET=13.0 CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO SYMROOT="$RUNNER_TEMP/kdjx-build" OBJROOT="$RUNNER_TEMP/kdjx-obj" 2>&1 | tee -a native-build.log
       - name: Package unsigned native shell
         run: |
           set -eu
