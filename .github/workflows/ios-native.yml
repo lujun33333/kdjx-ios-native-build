@@ -1,0 +1,48 @@
+name: iOS native build
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: macos-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify and unpack native sources
+        run: |
+          cat native-source.tar.gz.part-* > native-source.tar.gz
+          python3 - <<'PY'
+          import hashlib,json,tarfile
+          from pathlib import Path
+          spec=json.loads(Path('native_inputs.json').read_text())
+          data=Path('native-source.tar.gz').read_bytes()
+          assert hashlib.sha256(data).hexdigest()==spec['source_archive_sha256']
+          with tarfile.open('native-source.tar.gz') as archive:
+              for entry in archive.getmembers():
+                  assert entry.isfile() and not entry.name.startswith('/') and '..' not in entry.name.split('/')
+              archive.extractall('native')
+          PY
+      - name: Compile iPhone arm64 native executable
+        run: |
+          set -o pipefail
+          xcodebuild -project native/frameworks/pokemon_proj_tc_qd/proj.ios_mac/MyLuaGame.xcodeproj -target MyLuaGame-mobile -configuration Release -sdk iphoneos ARCHS=arm64 VALID_ARCHS=arm64 ONLY_ACTIVE_ARCH=YES IPHONEOS_DEPLOYMENT_TARGET=13.0 CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO SYMROOT="$RUNNER_TEMP/kdjx-build" OBJROOT="$RUNNER_TEMP/kdjx-obj" 2>&1 | tee native-build.log
+      - name: Package unsigned native shell
+        run: |
+          set -eu
+          mkdir -p package/Payload
+          app=$(find "$RUNNER_TEMP/kdjx-build" -maxdepth 3 -name '*.app' -type d | head -1)
+          test -n "$app"
+          ditto "$app" package/Payload/$(basename "$app")
+          cd package
+          zip -qr ../kdjx-native-unsigned.ipa Payload
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ios-native-build
+          path: |
+            native-build.log
+            kdjx-native-unsigned.ipa
+          retention-days: 7

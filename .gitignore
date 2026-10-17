@@ -1,0 +1,5 @@
+native-source.tar.gz
+native/
+package/
+*.log
+*.ipa
