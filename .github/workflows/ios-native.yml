@@ -40,6 +40,8 @@ jobs:
           mkdir -p package/Payload
           app=$(find "$RUNNER_TEMP/kdjx-build" -maxdepth 3 -name '*.app' -type d | head -1)
           test -n "$app"
+          cp native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/LICENSE "$app/Spine41-RUNTIMES-LICENSE.txt"
+          cp spine41_sources.json "$app/Spine41-native-sources.json"
           python3 - "$app/Info.plist" <<'PY'
           import plistlib,sys
           with open(sys.argv[1], 'rb') as stream:
@@ -58,4 +60,5 @@ jobs:
           path: |
             native-build.log
             kdjx-native-unsigned.ipa
+            spine41_sources.json
           retention-days: 7

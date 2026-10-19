@@ -108,7 +108,6 @@ static AppDelegate s_sharedApplication;
     //SDK初始化
 #if !KDJX_PRIVATE_ACCOUNT_CHANNEL
 	[[GavegameSDK sharedInstance] initSDK:^(BOOL result) {
-        NSLog(@"GavegameSDK initSDK %d", result);
 	}];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userLogout) name:SG_NOTIFICATION_LOGOUT object:nil];
@@ -224,7 +223,6 @@ static AppDelegate s_sharedApplication;
     [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];//HH代表24小时制，hh代表12小时制
     NSDate *datenow = [NSDate date];
     NSString *game_start_time = [formatter stringFromDate:datenow];
-    NSLog(@"game_start_time =  %@",game_start_time);
     // app名称
     NSString *game_name= [[[NSBundle mainBundle]infoDictionary] objectForKey:@"CFBundleDisplayName"];
     // app版本
@@ -258,7 +256,6 @@ static AppDelegate s_sharedApplication;
     [dic setValue:totalDisk forKey:@"total_memory"];
     [dic setValue:freeDisk forKey:@"available_memory"];
     [dic setValue:sdk forKey:@"sdk"];
-    NSLog(@"%@",dic);
     NSData *data = [NSJSONSerialization dataWithJSONObject:dic options:NSJSONWritingPrettyPrinted error:nil];
     [data writeToFile:[self documentsPath:@"tj_device.log"] atomically:YES];
 }
@@ -271,7 +268,6 @@ static AppDelegate s_sharedApplication;
     NSString *filePath = [self documentsPath:@"tj_device.log"];
     //从filePath 这个指定的文件里读
     NSArray *userinfo = [NSArray arrayWithContentsOfFile:filePath];
-    NSLog(@"%@",[userinfo objectAtIndex:1] );
 }
 
 -(NSString *)bundlePath:(NSString *)fileName {

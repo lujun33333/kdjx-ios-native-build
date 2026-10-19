@@ -1,0 +1,943 @@
+{
+  "revision": "77a5db0ec6d16331f5efbaa7662bba9355bd3424",
+  "source": "https://github.com/EsotericSoftware/spine-runtimes",
+  "namespace": "spine41",
+  "files": [
+    {
+      "upstream": "spine-cocos2dx/spine-cocos2dx/src/spine/SkeletonAnimation.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/renderer/SkeletonAnimation.cpp",
+      "source_sha256": "ce973a805edfc5b796748f5b5fc15a8226ebb89de90dcf1f01e5772017eca9fd",
+      "isolated_sha256": "ccf58e8d0f93e3b016f5f3999249af54a29ad94e9ed5f27148bca4eaf4cb65a2"
+    },
+    {
+      "upstream": "spine-cocos2dx/spine-cocos2dx/src/spine/SkeletonAnimation.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/SkeletonAnimation.h",
+      "source_sha256": "ddd2268b1aac44a8fd392336d4d60712c296df15560cb9293c9acedebe40fa3f",
+      "isolated_sha256": "4f664d52d95b2c5fa4ce94259e68f563e92554ed2099cb00bb3dccba1272c0d5"
+    },
+    {
+      "upstream": "spine-cocos2dx/spine-cocos2dx/src/spine/SkeletonRenderer.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/renderer/SkeletonRenderer.cpp",
+      "source_sha256": "4858ad7cf5b230632905edc98a472a29480d9f62932fb2947b9a2ca2da96a4ea",
+      "isolated_sha256": "cb3c4363a33fed347a0b413beecbd62e8c20c4f008755227ef4c2895410cd455"
+    },
+    {
+      "upstream": "spine-cocos2dx/spine-cocos2dx/src/spine/SkeletonRenderer.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/SkeletonRenderer.h",
+      "source_sha256": "7f0e41ea33a6ff7e1396bd3d09dd9d2d88f6450166047b771144eab024bf61eb",
+      "isolated_sha256": "55a8a1a3219a95d134a221f96f372fe3c8b5275b0493da52e2fe6fa3e00336c4"
+    },
+    {
+      "upstream": "spine-cocos2dx/spine-cocos2dx/src/spine/spine-cocos2dx.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/renderer/spine-cocos2dx.cpp",
+      "source_sha256": "c45c0534030483e261bb3bff2bf2233f4b2b6ee82238ced1332653a515cb8368",
+      "isolated_sha256": "f583906b16d162f70a6b5ee6c67d79164d5aaf52fba6cdf38223fac254c2e20d"
+    },
+    {
+      "upstream": "spine-cocos2dx/spine-cocos2dx/src/spine/spine-cocos2dx.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/spine-cocos2dx.h",
+      "source_sha256": "2529788c08c611c996b932ff3ec0b731bd72145f864f5090fb439bf3492cc24f",
+      "isolated_sha256": "cae74dae868f77305cfabb473a629d236040f96e25e6f50fb88cdca7a8c9eaf9"
+    },
+    {
+      "upstream": "spine-cocos2dx/spine-cocos2dx/src/spine/v3/SkeletonBatch.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/renderer/v3/SkeletonBatch.cpp",
+      "source_sha256": "5605290a5a3b5bf4cb42c9773d858fd414d5cbc0e393ba0a8ca51e1f9eba125f",
+      "isolated_sha256": "1eed1ae227d802fe0846e6c53795d7f1471185c41e3671a0bf4038f779d03eaf"
+    },
+    {
+      "upstream": "spine-cocos2dx/spine-cocos2dx/src/spine/v3/SkeletonBatch.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/v3/SkeletonBatch.h",
+      "source_sha256": "46bc2eee6006d795f7aab0596dcd73f95c707018b733485d4fa494e0d9e63753",
+      "isolated_sha256": "c44913d117e07635976bd1d161534456ba879671d49c4e66edf78a814b111797"
+    },
+    {
+      "upstream": "spine-cocos2dx/spine-cocos2dx/src/spine/v3/SkeletonTwoColorBatch.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/renderer/v3/SkeletonTwoColorBatch.cpp",
+      "source_sha256": "6b383881a126987802937a808bcaa5f9e8ba8ea54dbe8f47b76a6a26802ea541",
+      "isolated_sha256": "917e6b23128c994bf9e281549b7af4d61dee3c27263446dc62873d76b7091d86"
+    },
+    {
+      "upstream": "spine-cocos2dx/spine-cocos2dx/src/spine/v3/SkeletonTwoColorBatch.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/v3/SkeletonTwoColorBatch.h",
+      "source_sha256": "6abe9d355df2ea96575e78d8ad4b7d5320baebf8e85e507ae8a90db87dd7f025",
+      "isolated_sha256": "a1d863e1b1a334b2e82a15801c7e4499e1eaad363a93a6bc5c20045725742860"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Animation.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Animation.h",
+      "source_sha256": "edb78daa098be3ee82caf775293c9a86cfc1767d59b89cd36e18d8bed7176096",
+      "isolated_sha256": "1a707f404f1d74d05dc9b54ba83b5524f2babca6ec2e1d8ef9fe906b8561d10a"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/AnimationState.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/AnimationState.h",
+      "source_sha256": "1773b486879a52b0d09cde377ca105d81270ae01b1b18d391abae99074103147",
+      "isolated_sha256": "7e32897b6ee85e24ddfc6d704fd2e311a68ded9a0cfd02bc38d80d613f1dd0d0"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/AnimationStateData.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/AnimationStateData.h",
+      "source_sha256": "1cd661f86ecfe8b31b39342c9f85988361a11bb74f5eeb4453098240740a4e17",
+      "isolated_sha256": "057c1f1ecf0d36ca4351e214be57838e69f4da1e56d873ab274718aee1463386"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Atlas.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Atlas.h",
+      "source_sha256": "e91c06ae090251d3cfe04e6b9c5a5e5370c61debc5e5ea963995d786f38dab98",
+      "isolated_sha256": "be30645df200c62b6085f6bd106879d0b273e1823e322a548ebc9d7899a2d207"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/AtlasAttachmentLoader.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/AtlasAttachmentLoader.h",
+      "source_sha256": "2f44991d730233e6e422270aaf0bb7c5ceba9476e9a3b03fff38db6fb849916a",
+      "isolated_sha256": "d20c61366f8fd1359edb9f58a6f2704c1eaff94270e59e153fa15982a4e93d5b"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Attachment.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Attachment.h",
+      "source_sha256": "7cc346c1e55ff489680f6b48011efd1872d5cd5ce271ac74b3c8eb72c30d57c5",
+      "isolated_sha256": "17e3557cc23e1771abcc78934d2107928ffec79651743ad91d31aea121e37281"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/AttachmentLoader.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/AttachmentLoader.h",
+      "source_sha256": "3204068bfd6ca8a2e8e3ee8980fa77db829dd7e72ecd84f8757b8dfac4228b5f",
+      "isolated_sha256": "589c3b06ef830ebb097b6e86fbbe1a8020c9b4a8e87f0c4f864136afd7ccf2c7"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/AttachmentTimeline.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/AttachmentTimeline.h",
+      "source_sha256": "7291132b5956022c44a13fb49555df55ee3332853de25e195d50a16a76e2a526",
+      "isolated_sha256": "e59b6ff6e463a0f6a081f8bb05c0509843a4adde92beeacc11f881d460f62332"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/AttachmentType.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/AttachmentType.h",
+      "source_sha256": "5834e10e7d22be9fa5c482b39be513ed79e79c12b071bbb0ccb29a350abf4ca3",
+      "isolated_sha256": "a5046cddf047c22f27c84c1435eec949431d06093af2de8cbd1856b988c1de21"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/BlendMode.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/BlendMode.h",
+      "source_sha256": "ef82a22ef05c1ac46dbf55e6cd78f8f90f0a2f99fdf9533d06bf188294c35a77",
+      "isolated_sha256": "78a16f9f2aabea19cf8855ec7a310cebaf2723d33df17c299b01aee7a3bb7ef4"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Bone.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Bone.h",
+      "source_sha256": "26db4299000bf4ac76dba2fab3c582e6c3d8fb3f8842c8c76dd6809abd78a33f",
+      "isolated_sha256": "9f9cff62c9d5a0ada8d5d221749d355fae599672144c7df0a136a9b111e8b596"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/BoneData.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/BoneData.h",
+      "source_sha256": "47124987766c9f45bc93ed0f329df3ddfe3af3e39d7abf67e680b500440967b3",
+      "isolated_sha256": "a8f344cad0936f574173b5de1d592bf9f17749692e6733f3fd7e3c7b846109a7"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/BoundingBoxAttachment.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/BoundingBoxAttachment.h",
+      "source_sha256": "30eec979e4856c5da713fc712d015621aa6a3b161f0584521a34b1c8ca0e8dec",
+      "isolated_sha256": "1da1a71cf5a6a25ed87557e10d42c7581221272aff0e59d7a62fbd3f9cbdcd4e"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/ClippingAttachment.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/ClippingAttachment.h",
+      "source_sha256": "826b0559e31125e61e8173b1200d232c633f8e7802424c12c9a301d24b840fa9",
+      "isolated_sha256": "f13356116b964692440af2bb8d5e736884569a06c145422dbfb63f46c02109bb"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Color.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Color.h",
+      "source_sha256": "4f3d3fd1f7ae25a8ab42511ad0729c02c35982524af39d3753f60331945e847f",
+      "isolated_sha256": "abc520212c99d7871db2556368678b036cebbb22270ae1d7ab3c3ac133a199cd"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/ColorTimeline.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/ColorTimeline.h",
+      "source_sha256": "7ca67875970090f4d5091884e52f7bde154bdfe0ed0a2ee593ff74323ff8971e",
+      "isolated_sha256": "805c5b9adde13d472c7ea7d373d9f9128c6a791e16d24907d9bd6e8b8950da5e"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/ConstraintData.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/ConstraintData.h",
+      "source_sha256": "a6b02889a753b94982ad31103fcadef559c8e46e4fea52ac3fdc647088eee26b",
+      "isolated_sha256": "1fde49c4eae5759433f735c28406aa0a006be1553593950b327d83e20d693914"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/ContainerUtil.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/ContainerUtil.h",
+      "source_sha256": "0ed8a3d9ed5888328015259056530795a52b79e82cfdf9b0f8db0786763dd1fb",
+      "isolated_sha256": "6a924d0c636182a93d2e8597ecf12e70a9ebc89414ed638020eef9a2aad463e3"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/CurveTimeline.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/CurveTimeline.h",
+      "source_sha256": "1f8d4c6e06d2acfb95c58b2e5aaf831a2a760f0f954e3b4270d588a02f0b0096",
+      "isolated_sha256": "c1cafc2eb8f7f840b261ad7d37e63c5000b323cb7cb36f48981d3e1817b0fc95"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Debug.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Debug.h",
+      "source_sha256": "12e96c9e816fbc1ef4d70fea19b91034c44928e8fca27432493c9e59521f300d",
+      "isolated_sha256": "bdffde885b8c47caa821f9b1776610419172af90bff315ea3f82742bc0008ca1"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/DeformTimeline.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/DeformTimeline.h",
+      "source_sha256": "17c8647eab7f999cab9cf7d0283dd7d748a7e95e7d473ac31738c6732c54ed5b",
+      "isolated_sha256": "e9b909e95c3ca293bc0da1222d9811e0d7db9fbc7bd454f7e486f8afa5c7ca78"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/DrawOrderTimeline.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/DrawOrderTimeline.h",
+      "source_sha256": "c8f3b2720328105415e23c82fec231d65d051707fa4361003094c3e53737a1c1",
+      "isolated_sha256": "904ab89226efbeb5d6a0c619712c282c4d6ea07810d181d594cd3ab03874f122"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Event.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Event.h",
+      "source_sha256": "c9d73b9c1846da8210c345f96adff7f0b37723a185d449f5bbc7a667b2369a39",
+      "isolated_sha256": "2b22e3ef654bd9f58ea4ae8849e6427e3f617325a6d416290356d4a941b654fb"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/EventData.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/EventData.h",
+      "source_sha256": "f619a6ad236621d6b175592e0c449b6a2f3a79efd8bafc2bae722d402f6001b1",
+      "isolated_sha256": "af50ee20f8c149bac969dc7626f2ac354a924eaa4bba673f57bf132960e7d3fd"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/EventTimeline.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/EventTimeline.h",
+      "source_sha256": "7c956f21a7ebcf9479a2fe8b03f12aec52dc254faf33725c72e740977b0bb116",
+      "isolated_sha256": "a01c72ddca286fb44cbe2ab05feb1e027cc7c5bb318b0e8aafc46641e032aaf1"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Extension.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Extension.h",
+      "source_sha256": "c0bb42225eb4df6a3c6995bb3e1494fbbe0715a1c8a44995045715167f475a04",
+      "isolated_sha256": "84ef702b48be5bf365ef32e06ede17722e1733257e02bffc0717f36eceabba2c"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/HasRendererObject.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/HasRendererObject.h",
+      "source_sha256": "2892972bd93e63368355f2efac14da955be5d408917e7d37345923b18d9e0b6d",
+      "isolated_sha256": "10b46644306b5e6c16580c3db348772e40b99f461593b23b7ee118d98bd499e6"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/HashMap.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/HashMap.h",
+      "source_sha256": "39f4c08c6c8a3c1a2019f1257a8fde5a6a0967edfdfa4302aa69744af38cff22",
+      "isolated_sha256": "7b7fb4c819c819d814998974ea2c61b07974f551c5c5c04654044297b5c08cda"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/IkConstraint.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/IkConstraint.h",
+      "source_sha256": "0ab7c1bef921d0bef9b0c51e51a4d1e209a2e6dc49b6c8bd4956eedbfb7c9949",
+      "isolated_sha256": "b1fcdab70b50579bba19280e9f64a35bf2d5e8bbc3670b4ba85ffb6d4637c94b"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/IkConstraintData.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/IkConstraintData.h",
+      "source_sha256": "02b92844d4d4e6db70c46a4127bc82902193a23fcdbe5874260aa455262bfa74",
+      "isolated_sha256": "c1e5b4a1b03c371e52607adee43350ba94532393f59767ace18712e7c996d230"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/IkConstraintTimeline.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/IkConstraintTimeline.h",
+      "source_sha256": "8e0deef22ef2ea8eb66030ef1b55800c08747e6da49903e8b7b75bb8aa978f8a",
+      "isolated_sha256": "b28fd91986aa019582e4b536809d6464f62dd29184a0e8c93c6e4106e59c514d"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Json.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Json.h",
+      "source_sha256": "c30f2139431c108bf27b410b6cea244e5b5b8771ef0395ec8e3994a558721ee2",
+      "isolated_sha256": "3e0fa8e59d391bf9ed756daf6adc5831ffed26a7b9a5665e155a4da3a9d6347f"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/LinkedMesh.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/LinkedMesh.h",
+      "source_sha256": "e83a2108690267831e90255593f828dd689eeb03123d0c3095665b0b0f9dfe1e",
+      "isolated_sha256": "5db03f5b6cb6895e886bf099b68325ba53bb2405e6c6254209bb3c8a0ca48a58"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Log.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Log.h",
+      "source_sha256": "007076caf0623fa7cd53ea5368b83e5e54e23ed6e82fa87611dad09b850e09f5",
+      "isolated_sha256": "af78a2255ef2b7ebee41523a9c525f896703486b34deed9a80cb2e3df881cb47"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/MathUtil.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/MathUtil.h",
+      "source_sha256": "d1188c38d223fe5cf235bb8a75f2a49ad68587480cea72cfdbaf2b38208bb4a5",
+      "isolated_sha256": "c56258e0b687ed148fe96e322d04749b4e685eab37dfc9eaf5a1fad72ac7c1ee"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/MeshAttachment.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/MeshAttachment.h",
+      "source_sha256": "cd9641029187f4d95d5dc978750c82b639c85157ef2e8084f14b2b681b94dfab",
+      "isolated_sha256": "01876eb1f8654fd6ead83ca7102dfb4ec567719ed54bacb4821ba997486ab050"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/MixBlend.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/MixBlend.h",
+      "source_sha256": "ee2aeda8b83b56978aabc172dc411d136c5d36f529dfcf35a9388f1d2f8fca38",
+      "isolated_sha256": "05cc952fe960ad24fc1cb331c9be13153d2b69ccece399258a11326738622887"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/MixDirection.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/MixDirection.h",
+      "source_sha256": "14c05fc30d3537f6ccf7333533113d8a6e5e2511719850a55fb9b336ab2e0b52",
+      "isolated_sha256": "b694c02dc5b8ffa5b348ad58b7ea52127dcb8db66d177a77d6e4ad99312809c3"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/PathAttachment.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/PathAttachment.h",
+      "source_sha256": "e08b438c6711919f3e33e056ff734f782b0264f478bd06ea5701b2605b1a4b9a",
+      "isolated_sha256": "501e13b3bc0994cab0ce481145beb0a8cbb26ecd4183afa1bd9d6f4b0704e7f1"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/PathConstraint.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/PathConstraint.h",
+      "source_sha256": "23100966e537a2b9e9e00dcf849af63c2356bcf29e9f7719fcdae46ba94df88d",
+      "isolated_sha256": "9f282fe8822db8a47cd90831b8bf5c103a85383351046ab580aae870fd4dde86"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/PathConstraintData.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/PathConstraintData.h",
+      "source_sha256": "03d2d0c035fe67116820d1ca8a121b200f62379fe3d271f148ba6a7ad1cbd528",
+      "isolated_sha256": "73aad7809baf6d79cfa272d44a1864623a8c3e0dea4404fcc96f8f47099d404c"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/PathConstraintMixTimeline.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/PathConstraintMixTimeline.h",
+      "source_sha256": "657ec157e43713f4ea383870a78f53abac19733292d40d84f71b19e7e152777f",
+      "isolated_sha256": "60756c16ef7dc5c5c362f36f47f6dcb0ea9a6140cbccea4eed929ab7ee12077c"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/PathConstraintPositionTimeline.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/PathConstraintPositionTimeline.h",
+      "source_sha256": "442dc42d69ef08ebe319b30e79683b0b39be6ddc52e243bc36f8c31424ec4d18",
+      "isolated_sha256": "c81c56a77e2c43a8f60e36a3712cfed367e7d86830f972bfc2008aa6ce57216d"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/PathConstraintSpacingTimeline.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/PathConstraintSpacingTimeline.h",
+      "source_sha256": "f0200e8a34636985227f8b6dae98c9c9583b9e8f8fb412178e74736e5e417c16",
+      "isolated_sha256": "63ffa3f0dc3a1a487b7852eb8839c34d5c87ae6660f8f895b7dd5041eb21a5d9"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/PointAttachment.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/PointAttachment.h",
+      "source_sha256": "582363190962783a508709c9463e58cde248c8b006ef5708faaa747cf740f890",
+      "isolated_sha256": "4c80a2ffd86ea23aee2660c433864f4502d43e79195b1b6a66f86a234af5e034"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Pool.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Pool.h",
+      "source_sha256": "29e8b6eadbe5f3780d443c4d240c88dc335abc26524af6a7b14f81ae006d2999",
+      "isolated_sha256": "20d56dc698a5065615fe8f8701f12c0bae2e686d5beb0a10e3082d366be575a2"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/PositionMode.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/PositionMode.h",
+      "source_sha256": "90a3e6b87041c75bdfbb05ed1c2d99c68d28a170c047b65598d101337b248631",
+      "isolated_sha256": "e6bf05212fc1427c028d52951fbf35e8f35296384a851adda1c73c81af2eee0d"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Property.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Property.h",
+      "source_sha256": "4709779e5c3eba9f2b051dc019f01a528d6e0b1e73e2c18bb84e4e8cab05fc5f",
+      "isolated_sha256": "12feadb9db4781b5aad1eed2f595994a8c81a200916050b2f72c53b01fca7836"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/RTTI.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/RTTI.h",
+      "source_sha256": "59b84ed750078a9833d5426bac32149000d91c99ca81ca6dd042c6071e787748",
+      "isolated_sha256": "073309c9386d756718a57572232e6cf2990b54a2432a6d9e0199aed586eef9ce"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/RegionAttachment.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/RegionAttachment.h",
+      "source_sha256": "0783ff62b09da070148426270800249fc8483bf2a056bb67a6eb039e267ee8c5",
+      "isolated_sha256": "dbb99af15bbe1de69c33e93a9a25166d9aadbe75d9ff2ffad816aab676f814ae"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/RotateMode.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/RotateMode.h",
+      "source_sha256": "d7b62709c388ec7b4578b64cb2885c75a03be7c0f107bd5d8e9f23fb4e8c0bda",
+      "isolated_sha256": "c7ddb3e51e53ad81bf61e7a7bcaee4ea1127436d97c1a4d04eaf18c994f525ef"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/RotateTimeline.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/RotateTimeline.h",
+      "source_sha256": "89c8235ecfe1a694fc2acfe586a61d7d438b779877ee35a2f935ded848b7a9f1",
+      "isolated_sha256": "c5dabab1d8fdf3f8ae36f33d17a9d76aeebf0f23a8ed0fe14269c1e08ad7444d"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/ScaleTimeline.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/ScaleTimeline.h",
+      "source_sha256": "10d3c20932c7e0b2133c0edd412990b2c475c1f00fc9a193281570ea25c253c5",
+      "isolated_sha256": "676d16136dfcd4eb2c1bb1fd52270de5895939fd76b9587a9a67b1adae4d7031"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Sequence.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Sequence.h",
+      "source_sha256": "8aff092973ce3ec956b384cf034d3f01f97711f6610fd6caf017eeac08f193cc",
+      "isolated_sha256": "07aa06f88316ba1944c51e693adadca657abe8fc1bed51f2427b8119e9df739d"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/SequenceTimeline.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/SequenceTimeline.h",
+      "source_sha256": "fa2faccb2e6b020d8d6118c91dff77cc3192b216601bd121883efee48f4f39f7",
+      "isolated_sha256": "f682406f93b9e425b49467244982631e51220a74a281509311a0f41da58bf931"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/ShearTimeline.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/ShearTimeline.h",
+      "source_sha256": "f7a1681c0a7758bc5f40ebb06ec71111efb3cd227547ae588dc0500030e95209",
+      "isolated_sha256": "ed2f95a0d4aa9c85ffc15f438ebcb96a38c36ffe7d8dba8c6b31cbc35a8cd042"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Skeleton.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Skeleton.h",
+      "source_sha256": "c70547c1028ab328ae6f7b5bff03ac7754690f6d75c3ab6a177d8796d11645c2",
+      "isolated_sha256": "0b482acc8ddfd782d86447597357e921e2cf76aeda3adef977476e8c375f7e25"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/SkeletonBinary.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/SkeletonBinary.h",
+      "source_sha256": "098deb8b42fe95ffcd66617c4d4b02efc190ea5544c9590d1ee1a5eed61a959f",
+      "isolated_sha256": "012a29aa730cad23cd9fa0896dfdc55c8ed1db666d19cd1a60251092afe5a9e2"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/SkeletonBounds.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/SkeletonBounds.h",
+      "source_sha256": "5cea027a3fba2e4fdcd833fb30bf7e72a9d5105c6761ca321d0ef618f1c0909c",
+      "isolated_sha256": "d63de1b94503aba7226341d9c49e3079517464289daa8c3c60c52cbf91dbb660"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/SkeletonClipping.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/SkeletonClipping.h",
+      "source_sha256": "72efd4330adecf595feea7e92039aa0d476e620e013a1e007d65bd763ac87f54",
+      "isolated_sha256": "7448535fec97ead9fdb3c33b3675b38e5b0eef1dbb7a5dd9613592c61dd45198"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/SkeletonData.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/SkeletonData.h",
+      "source_sha256": "0b8bb49d196987708859efffcb7ade87523671de49f99ac1114cd3fc6b070fcb",
+      "isolated_sha256": "79377a42a86042986edacd343602b422ec0a79362146ff68c9e19f645f5380ac"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/SkeletonJson.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/SkeletonJson.h",
+      "source_sha256": "d68c525d5913863a3d877577fb36a29bc954ff6a1816ccc8d7933c1bce479a8d",
+      "isolated_sha256": "40eb6967ea8f5d4d5f8799e434778a8fc6c21c5d8d3d66acfef972e30e026e7f"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Skin.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Skin.h",
+      "source_sha256": "10e7b943380e394e9735360fee5bd577c128b9d561bc282790a51a326397948f",
+      "isolated_sha256": "d19e97033d3170eee03c7311c8ff595d14c8ca40acec1a2e8cbcd513ae27ccd1"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Slot.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Slot.h",
+      "source_sha256": "00216fefa183c9ecfef8da443ac20115011d7082b2dc6bd1f893e348083cd32e",
+      "isolated_sha256": "f7a5d695968cf3b83f716538857bb618364e45a6bbfcfc2c948ad02dd3461bd5"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/SlotData.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/SlotData.h",
+      "source_sha256": "a54173f3a2a464d9e6d9820f81d3eedc1633c9e99b25a9c05605b530f7d5fc22",
+      "isolated_sha256": "5153b09fb67b7d4d95fbac3e3dc65c78ed9e2fd18a5e5bfae63da27be759c664"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/SpacingMode.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/SpacingMode.h",
+      "source_sha256": "41d967f27381723f00f89bac6c0e67509013073221824ffa8afdaaea15c2c7ac",
+      "isolated_sha256": "9eafe34751b264eafc7ae662f44902a17d98ddcd60d3bf0b51727fdfb6f1fdf2"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/SpineObject.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/SpineObject.h",
+      "source_sha256": "31eb381243e7dcb70ba33b09e7cdc44c617c33f78dbfabf0476aea34e9666785",
+      "isolated_sha256": "ce45dbe918d422ba11b8dad3a57ae6d6cce5507ebbc4b8b4fe89a60b26578267"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/SpineString.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/SpineString.h",
+      "source_sha256": "2e85bfe33b20541d42fef60728b6698b69ca5b004ef190d98e920d0b3e003a78",
+      "isolated_sha256": "d9231d8add4af868d6d5f923e6778f9d837cbc08e399ac402961a50a2aee2637"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/TextureLoader.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/TextureLoader.h",
+      "source_sha256": "6bfe406665a66ad7435553a2c46a40655d73feee9e273e4db6ccc11fc57b6f5b",
+      "isolated_sha256": "dae38e2511c7795f4fe1ae412aa898d6dc25a7461f8f496f6e310b2a12af2599"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/TextureRegion.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/TextureRegion.h",
+      "source_sha256": "c19618555ab2f84bf205414fa0548d807fa0ba5aeddc8650ebc8794113771a81",
+      "isolated_sha256": "0fa567f468a9f13dad1a09053b653ccdcf50249cb757fad0df883d2dad5f372c"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Timeline.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Timeline.h",
+      "source_sha256": "b547e476644298a3a14e80a838e672ada0fba8ec7c97b97f794cafbb8044e7e5",
+      "isolated_sha256": "e8358375ca96eb7fbfe7cc1d6d2b622e95f708f8a3ec1e791e9f55e1c4679f4e"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/TransformConstraint.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/TransformConstraint.h",
+      "source_sha256": "bac7699480fef6debd490104e7dac9c25ce69b5af3288b436e5ef30a17d22767",
+      "isolated_sha256": "44f2f5bbc8b501555b3b8311006fee4ed279a19f2b7d121df5a0ca58e543d433"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/TransformConstraintData.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/TransformConstraintData.h",
+      "source_sha256": "7b9f7eda60337cd6f4ad14cb7a6b85099032a95192c9ef970f54fd5708e1b290",
+      "isolated_sha256": "0d67ff493fd97a386564133f06e196d2e4549f39cac4c013ceb9e53e0fbbef1e"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/TransformConstraintTimeline.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/TransformConstraintTimeline.h",
+      "source_sha256": "300d513743ad644775d10cdcf8e18a4b5d1f5709fcf7036d14ba50116714e186",
+      "isolated_sha256": "b477a0d9d927decb22b415018e851476086ab098ac69f7758a4bbb6ca2f405a6"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/TransformMode.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/TransformMode.h",
+      "source_sha256": "cfbe6eaf19ffb1c351d8b5fe4bd8882454b9561786c20f5f8b462dc6dd9ade2f",
+      "isolated_sha256": "8ffbdfc9e17fe2b15b16c3808f3e9d6e8b97a5b046abfb03a55951e19a22a0cd"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/TranslateTimeline.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/TranslateTimeline.h",
+      "source_sha256": "acf158f5216bd9bb117a37240a7518c75a7af93ff26294d65052ec67da3a9053",
+      "isolated_sha256": "d9252a36281db56729c660e8e1b74bdf1f600cab067183e9482aacc6a9aa2727"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Triangulator.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Triangulator.h",
+      "source_sha256": "bbb20696f1f641451aa3b3056b5de1c791cc19c2ab7a1cd005c12c75bb2610b8",
+      "isolated_sha256": "a51e3f0040b597c1f02e662f546e998dac4d496004781fbe52807158bcb7898b"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Updatable.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Updatable.h",
+      "source_sha256": "bd5c49f3b3e93f5a05e7641b9fdbb40098811a14d79be721ab65bad6d4263d99",
+      "isolated_sha256": "5587b98f8fc8b1ee54001d50808db114f558e7afd6b1a7a632ae1c639b355069"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Vector.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Vector.h",
+      "source_sha256": "2fcb099d51285c7c7d893093285daf8972eb7e4fb0deb8393121f35fca73bdb4",
+      "isolated_sha256": "a823f75144fd7ca229c36d9e1272a27b2449674e021015847d7f19c659b362c5"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Version.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Version.h",
+      "source_sha256": "1574e664338232ceb081d1d5377177204da3ff99e5ed57c8c8ffc7109656e2ea",
+      "isolated_sha256": "65ad27cc89dd75ea5b61ab9b9ed6368f65630c353ffc06c73b81263d9e9dc269"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/VertexAttachment.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/VertexAttachment.h",
+      "source_sha256": "c4b2a7c2e2f75e62b33e566cc95511054b05560f636da446d490a0ae35a17bb8",
+      "isolated_sha256": "7080d4143b31c21b214d9d5faa60e085724948b6a945b4e501e142a394866773"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/Vertices.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/Vertices.h",
+      "source_sha256": "26ee5d1c245d10fd9539b0c034ab33f62cae210072ce8a540e54bcb00c974677",
+      "isolated_sha256": "47a27bcad3301489a96e2a474278dfed7c1d6539338a5accf1d3c56f18e5c8ad"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/dll.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/dll.h",
+      "source_sha256": "736ccaa8395110ee6afb5ad1110d71387039579a0853c34f2353bdf5a8ef87a5",
+      "isolated_sha256": "56059dbf85a6a8145bf55b3023bcff5eb2027392df675f30aac1c74930c1dcfe"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/include/spine/spine.h",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/include/spine41/spine.h",
+      "source_sha256": "920731a1416036cd376d5788652e080881f83f33f1cb19e367ce31a23980db56",
+      "isolated_sha256": "c335742f3829a983a536884a0592bc2b65f99b49d0a36f70b02ec1ff5de7ab44"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/Animation.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/Animation.cpp",
+      "source_sha256": "a9a38d5a248e4f112ade46fe35ae51c0f1c836176604ae226003969b59fdf77b",
+      "isolated_sha256": "27157eb5f0b5788dbdbd1748add591b8faff256c1eb45ca636394f696abc67ed"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/AnimationState.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/AnimationState.cpp",
+      "source_sha256": "60b23e88f0212555e1b53ca355cc3f384348b3dcc10016ab4e388fdaa7dafc66",
+      "isolated_sha256": "4acf5bfa5a705128949d8a54c00a40d244a66b409f69d0300babe4b4f51ee713"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/AnimationStateData.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/AnimationStateData.cpp",
+      "source_sha256": "45aa5bde822dc9f05dbef2a0fce6349072e3b79d3b9f1f6372ca2ee55e1238f0",
+      "isolated_sha256": "bc0c3edcf7c564bdb07d051f269026e30abaf63c9c7c2472b503ae6a00149b37"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/Atlas.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/Atlas.cpp",
+      "source_sha256": "ae69ba52324e7b764aa3ab69d32cf1c332f582d80c977898d4076fb7e4686e9b",
+      "isolated_sha256": "19c06e6eadd0cd917c445673ffaac4794e172ef68bbd6bd92258078226510264"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/AtlasAttachmentLoader.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/AtlasAttachmentLoader.cpp",
+      "source_sha256": "a1c718b49ead90a451838624082a2b202ff5e3bd0398d0bcf17d0294a99458b4",
+      "isolated_sha256": "cbd267ed9165b9c105b6cc8ccea548da5bd30fff35309841ce04eb18f5a8a97f"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/Attachment.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/Attachment.cpp",
+      "source_sha256": "85f9e4d0a1be137454f41adc24717b279d53646810ff9e7a58b0626317cbb2ec",
+      "isolated_sha256": "de834f6ffba59d89bbe1e73ec622dfd2171b079d995752e668911c081aa81471"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/AttachmentLoader.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/AttachmentLoader.cpp",
+      "source_sha256": "4821c0a232e0d3ed9544987d326ddf0275ffcb595857f72913ac79039eb52dea",
+      "isolated_sha256": "9c9e896e6cb7dbd55ad6c4c6d53cbe5a8117971df32cdbe0343bc7fdaf4a4793"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/AttachmentTimeline.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/AttachmentTimeline.cpp",
+      "source_sha256": "8195b6f7ede3ee680b0904cd5a38d936b439b2a2bc46f9333b85325b17c19545",
+      "isolated_sha256": "d083504cb85dd45e53636059cce764ca81fa8729630972e1fe60cd035459f2eb"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/Bone.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/Bone.cpp",
+      "source_sha256": "73474adafb5440414f6055708aac95655a65600498593ba94a4cd85a5b4495e7",
+      "isolated_sha256": "a089b4600dfe76e26e1811830367d8f84e93874335e4177f448bd799f7e68b33"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/BoneData.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/BoneData.cpp",
+      "source_sha256": "3e88168ab1af2cf22c18de92c927f919be3b92541011cdfe69dd4404e1a57d2c",
+      "isolated_sha256": "1e902b375ca133849496995fb897a1068d67c74e595455e17b211217c94e17c7"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/BoundingBoxAttachment.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/BoundingBoxAttachment.cpp",
+      "source_sha256": "ace62f3f65a5e004862b956a5ebbe867273d93b350bdb7f2e9c4c4b7f23bc27d",
+      "isolated_sha256": "cbfbd88bc8440faaa2ab605f463b9e9f175b7f2854e8ebc1b6d7de23fa97568e"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/ClippingAttachment.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/ClippingAttachment.cpp",
+      "source_sha256": "f279c9f16043a168b65d0432afb9b25007de19c2b47e92cd0a655bc6661a760c",
+      "isolated_sha256": "5fad9f43dbb2acdf5d292235fc8f84bd4e7ead25a1d8939cb95b71817a3301f2"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/ColorTimeline.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/ColorTimeline.cpp",
+      "source_sha256": "445432781e42e6ce36f52052e2c7d4b0350a3307a7848e31e21820dc33a2907d",
+      "isolated_sha256": "d87e7300bb4d998b231dde833c460c99376082b6f6635bbe972a803959764049"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/ConstraintData.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/ConstraintData.cpp",
+      "source_sha256": "8b7088e6d48a476343972fa2b8a19caa1ecf1a5a3a6d9f3aaad86d114172a663",
+      "isolated_sha256": "3667e1a5764dd4eebedb55e1e02f03bd0aaad5d3c573b175a83e1c8b39979d1c"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/CurveTimeline.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/CurveTimeline.cpp",
+      "source_sha256": "f8ce6d5fbb2612bf62321b7dfee3b45ea826bee4f66680d0ecf2fa834435c1e0",
+      "isolated_sha256": "9935d95c764e9d5e1e8289e680960b27da8fdc83e07cfa6fb7207c29a5c08cea"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/DeformTimeline.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/DeformTimeline.cpp",
+      "source_sha256": "0ce30cd8b9ab42d907535f70d26bea2b78a933cdd4f8f15a1571160b54a44bf2",
+      "isolated_sha256": "a65bd2214bb05878a25a7a3742d1972faae56ab7c089f5755dddf43942bab9cd"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/DrawOrderTimeline.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/DrawOrderTimeline.cpp",
+      "source_sha256": "aacb1c060b6a2fbf0f21829b8caa27aa4a4101b2f7855a8a50ead34fd35872ae",
+      "isolated_sha256": "5545c2225cc75f78fb510613bea916bff6b191a7a17e3db561ac53017425f6ea"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/Event.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/Event.cpp",
+      "source_sha256": "acf62666f6b73d2945f0ef04d7b3d2a3da1d33e076f7c4957c186461ef7e2b12",
+      "isolated_sha256": "d9cbe4cae98ece373a3f23a7759c7b1cf71499b0c741fe572779728157f4afcf"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/EventData.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/EventData.cpp",
+      "source_sha256": "3c4489b9391c887ad157d03205cde3fbdefdda585f5c6002cd5d372c96610d9c",
+      "isolated_sha256": "6144f79fe440eb1be5d2bee67f633f3a4d204ed511e13f3d0fe4067a067b1944"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/EventTimeline.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/EventTimeline.cpp",
+      "source_sha256": "b6a0744770589d1eee450f6f1033d9ebd6319e694accd3546b9897fb3d7626cf",
+      "isolated_sha256": "9936ad15d6e6fad9b969ad27ac12f0b82b748562ea652529c56ae724e3a94513"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/Extension.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/Extension.cpp",
+      "source_sha256": "b5592f31feb918f5263d3252678cc5a7ed555d8155522ef3d632a657d178d88b",
+      "isolated_sha256": "4487134e9ebd0972fef30b471bb5993643c728ee93e2c5f892875708bbd0c480"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/IkConstraint.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/IkConstraint.cpp",
+      "source_sha256": "2b7d81b86d84b64c0c95589a0a2f795d2eebaffe4c809b48b5e2e8bfedbb88fb",
+      "isolated_sha256": "67530eb8d0f6ea519a0bb77e7dd50e5e026cf2aca843406d36b03acc43a45257"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/IkConstraintData.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/IkConstraintData.cpp",
+      "source_sha256": "17f3c15d839e165b3f0480d7cdc192d8015777b38933d1c28192bc0d3d9dda2f",
+      "isolated_sha256": "787cfe1b9c5f31ea8ddef130d3f09c0efe2ca51866d5c9ca6fb7d72b103807eb"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/IkConstraintTimeline.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/IkConstraintTimeline.cpp",
+      "source_sha256": "f9e264468047c353b34e30c2879420deb5bd9e42b308a5c7e29a5450c1a53f23",
+      "isolated_sha256": "5401dd5519787ca4ed891bdc4977bfa250e2b3464dbe4ca087e82c78ac1ef6bd"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/Json.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/Json.cpp",
+      "source_sha256": "77be2cf0d83575a25cdd8b6f05dc0493440e31e14b70ee5e969b22d126cd1130",
+      "isolated_sha256": "3592e34edeeec080c1a2cce9f44e7b7f561866f045b808c5248e289da3f4f9ad"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/LinkedMesh.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/LinkedMesh.cpp",
+      "source_sha256": "01109f03ee2a268e4d50ff664bdf0eaebe7b5b680d5c76d90f54806f57652580",
+      "isolated_sha256": "0682f6f65ccf1d62e0d67695fa85a60a4d69fa6ff1abd55d2043871fc2197c45"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/Log.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/Log.cpp",
+      "source_sha256": "8f6257f7628ec9e3e93635f1385007e885b2fb6a06808c1d08be68abec9eca57",
+      "isolated_sha256": "6e8660726d94937e6879005856a86239fbbfbc811eb3aecbd29f5a667e74ee2c"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/MathUtil.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/MathUtil.cpp",
+      "source_sha256": "3c7f87857eb8dbdc18e8e2ec7e21b666ef71d8a62bcde4c3d3533d7f565d6f56",
+      "isolated_sha256": "8c3ee9b556d518e8b49a1c5e80e46fac5ef9f9916a1ff23f783c208ca0f1f836"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/MeshAttachment.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/MeshAttachment.cpp",
+      "source_sha256": "57a2791168d282ce2f35b9610f14a0aadc4dfc70c422638c9b5c72831d840021",
+      "isolated_sha256": "a19dfc83293f10c72c4a287ed3539337851c0c97c1e87da1c30ee5d4802f069e"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/PathAttachment.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/PathAttachment.cpp",
+      "source_sha256": "2d074d73c988f6d814aff054fa2476b021395db2130eec1cb167037b6502e05d",
+      "isolated_sha256": "b99d9b225242e195d9151c91fac25e6c1bba21c03db9bc14af4fde8786daacbf"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/PathConstraint.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/PathConstraint.cpp",
+      "source_sha256": "09addfbc7e7a527d7f059e76bdf08238cf4de8402ac613a6323c080e281d6f42",
+      "isolated_sha256": "d92a12fbf7ca98418f5de7e63a7d61c5f6dcdf7c0e2033bce557bfe607e7f232"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/PathConstraintData.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/PathConstraintData.cpp",
+      "source_sha256": "93ad5049ed5e0e9ef0c9508f966b11042a498d07a1fe5b7fca0fe25dfbf8b42f",
+      "isolated_sha256": "3aaada5ebf1904d9527cd43c7085ffa4b08d7d79202bdeb294e1b5279372dabe"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/PathConstraintMixTimeline.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/PathConstraintMixTimeline.cpp",
+      "source_sha256": "8983c11a2e36277b08560aa369320df454bd35327327a33e963916ba78f08aa1",
+      "isolated_sha256": "83206b338b4fc065db58345a6651d3d58a52f91e47cf513b50c28d0ba1a298cc"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/PathConstraintPositionTimeline.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/PathConstraintPositionTimeline.cpp",
+      "source_sha256": "8e4b720f5b46aab558cb45e55aa9c7452d4a7e17721171c0a71dbc9268121c8c",
+      "isolated_sha256": "76a6d1b47443e9f55b7fd0cae0c32ad5ccf03416d85a32fa598729f85b5ba804"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/PathConstraintSpacingTimeline.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/PathConstraintSpacingTimeline.cpp",
+      "source_sha256": "ba9fea36f1f77b08953e959db42970b6ae873eaffc46df8e5457b72d3ac88ff9",
+      "isolated_sha256": "1fe3508e7c8a2d5ee25b0949050426d29d18df4a4f7b2dabedf95301f0b9ff96"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/PointAttachment.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/PointAttachment.cpp",
+      "source_sha256": "189269b603e859128dd012e51cb5d6d98b2584328cf730dffb31aea11d8b1230",
+      "isolated_sha256": "2d1cdd2b2fbce741b07815acd7189b7eeb63adf2fc77c60ed32c2cae99fc5d45"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/RTTI.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/RTTI.cpp",
+      "source_sha256": "25fac4fd7bfa4d2ad0f4fdb0db367832747f7009099999b2a2453ddf7ea7bca9",
+      "isolated_sha256": "84600fe4686d297b169d4a74831062ba952ea30f5b324975fc3f7c155ddea117"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/RegionAttachment.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/RegionAttachment.cpp",
+      "source_sha256": "60e93479bd90bbc920416401b8d2e9a8c969e4da75c74301eb6e2d53764ba8cd",
+      "isolated_sha256": "d15c4afdfd6a446bea14f3b373da63ac271b82ced6918507c369d0f1380c56d5"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/RotateTimeline.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/RotateTimeline.cpp",
+      "source_sha256": "eceacf35bd60cf52643fd5ddda73aaa8c6887b280f667712c18a394c17fcfbb2",
+      "isolated_sha256": "10f1b50d313066c11febddf4fae142ea03fd995219416e6d2297a18086a9b28c"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/ScaleTimeline.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/ScaleTimeline.cpp",
+      "source_sha256": "40378bc90b0ec80c890e761a94092c76580d9d131214cc6b933402daa870ac8c",
+      "isolated_sha256": "589380881969d4243f137b85f79d8b2736638ff16de5482fd56cdb2e8d4a0f8c"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/Sequence.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/Sequence.cpp",
+      "source_sha256": "dee00eb15b160fef005c90f08585f573db25b86eab52f1bfd435f647b701f101",
+      "isolated_sha256": "d10dbb9532c7f8c8b19a5da5a6d16daf6e1527c9ad7be055d903c8ab9ab6fe11"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/SequenceTimeline.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/SequenceTimeline.cpp",
+      "source_sha256": "5849b4c8bde59cbf072059bc960a3662330e47ef1292e4a1b1b809b39ada85d2",
+      "isolated_sha256": "674c614ea6d2f3f5d60900d7ad4c898f9fe7fad539cdec360d9f79b50550d6eb"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/ShearTimeline.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/ShearTimeline.cpp",
+      "source_sha256": "bf2174cde35e21681f2725d95f7e4b3a6edc05c2a69cf60951857830b9f582f2",
+      "isolated_sha256": "b48caa37e457937e959ad69e28322a101bc5655776dc7f398ed03d670fea1811"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/Skeleton.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/Skeleton.cpp",
+      "source_sha256": "703876d89823c949cb711ae1e7d8905223c81e9624f0fd35810d3de92aecdbf1",
+      "isolated_sha256": "f3183ab7172f4ad9c2b16df402be57b14d8b8f3223f53aa5ea4e943a9113a9d3"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/SkeletonBinary.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/SkeletonBinary.cpp",
+      "source_sha256": "9f5464c952582825e8cf99fa32f2f0d4649e1786479fdee3e46ac49686e0a8cd",
+      "isolated_sha256": "4d2b073babc157b293efaf52733ecb00acb2008f15527402149647174e1155b3"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/SkeletonBounds.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/SkeletonBounds.cpp",
+      "source_sha256": "b61f015fa30473c2833484a70b63af4ec047eceab8cf9fa1b778dd400540b058",
+      "isolated_sha256": "857a27695aacdcebbdc496062ebca48e333d8ba8fc24b752e23d5cd91be99b2e"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/SkeletonClipping.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/SkeletonClipping.cpp",
+      "source_sha256": "eacba18aa2005950cd1a1374242d388abc6e199daadc675ae5192e475419dc19",
+      "isolated_sha256": "836073ac61ebe299bd5130c3ca839f94888774b0864f03d29abfeb208ca0c3af"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/SkeletonData.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/SkeletonData.cpp",
+      "source_sha256": "f89b7d8ec680d1f9f356d32387e8bf791c89917cb7f51637809c04fbfc44df25",
+      "isolated_sha256": "aebdf4a62a9fa55e613bb8beb1adedc8b7dbf2d12dbad5e5df9e7359da62684a"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/SkeletonJson.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/SkeletonJson.cpp",
+      "source_sha256": "e4891be158d39e20a91ff69cdcf36930215de7fa50b907e04cef9dc911fef1de",
+      "isolated_sha256": "61a57c506d3c39e2295b483d323ec9611d6c54579bb24d559ee579ac36d73586"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/Skin.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/Skin.cpp",
+      "source_sha256": "7a8e3fdd497530f27b062441bf15957c1e14baacdabee3cd7b1fc7f0e3e6c015",
+      "isolated_sha256": "e500d2eee9d4c67fbb3040614b40d92132eb50f4251ee89d2b6ea3cfd56be21b"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/Slot.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/Slot.cpp",
+      "source_sha256": "fd721d2f8c8ce0eb3da604e0317c45903396dbe35bd9fca5510af72691c6e1ba",
+      "isolated_sha256": "87cbc3f2dec442c1c02f5e1cb08740026438b531ab00b33af7954163e894196b"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/SlotData.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/SlotData.cpp",
+      "source_sha256": "6e3df2ff5abe1877a3dbd4e6deb1b86ffa605c660b287efb77dfa056a4a8b812",
+      "isolated_sha256": "b64bfa24e7fc9fbed674df8916c27498c489e8b17045a6cb9203a0f71a626e95"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/SpineObject.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/SpineObject.cpp",
+      "source_sha256": "80a6bbb75a9295ec3588786272ccc5782c793b9439b91eb9c605ad3fd82ca2ac",
+      "isolated_sha256": "7a0675d14ca550357f98454b625dd29752d928c843e973c70ff9aad31c61cce0"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/TextureLoader.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/TextureLoader.cpp",
+      "source_sha256": "2f75176786b8891bf0472ee922c66e7336035a234a72093397e2d743b967cc99",
+      "isolated_sha256": "bfb9e9e1953f5fb20fa8dc33002bb5078f299961a04b3a0020802cb9d2c59a5d"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/Timeline.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/Timeline.cpp",
+      "source_sha256": "84994a0c61301c840fdeeacae38a0dc43934e09e15e6c2f5f29cbb10b3dd645d",
+      "isolated_sha256": "1274340a22e81c5187b9ddac6db10ab8ead314acb2c85e821cdd81e8ea297984"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/TransformConstraint.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/TransformConstraint.cpp",
+      "source_sha256": "e1f580461356d225b9465d63eb2c22d0f9e50f41a444faf6b1232a204a793da7",
+      "isolated_sha256": "d3dd6b892d51587be05d4e62fa107e08825ad3bd3180e734ab6813d0905f3e07"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/TransformConstraintData.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/TransformConstraintData.cpp",
+      "source_sha256": "8225bf7dd151a0ec744144b2bbe7b0d62b8bc60741a34197ed70acbee6379d59",
+      "isolated_sha256": "822154de497080780b3e055422b1b606a53dbec4d477ada2de4f6766f16319db"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/TransformConstraintTimeline.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/TransformConstraintTimeline.cpp",
+      "source_sha256": "e83fd2ed05feccd9b8bb503808aa4c51a114784c59d632151883cf5c3575f802",
+      "isolated_sha256": "d2008e5edc0cb2dc1cf8f02ebdc0b52726590cd48a8999b9f3a6216885d532b7"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/TranslateTimeline.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/TranslateTimeline.cpp",
+      "source_sha256": "bbf59bb0984164065f95009d28ca98f2027dcd24a67edfb0caa5c14740cb08ca",
+      "isolated_sha256": "7628d29494e75b7c29bcbd2887234d53323baeef3d9468f627f07cb0726d9e37"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/Triangulator.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/Triangulator.cpp",
+      "source_sha256": "d9d5b25a43ebc13d10b27e26e8d5417ae108f7af394d24955c2d4a3f7e60d87f",
+      "isolated_sha256": "70a43cbc16b0e5cbc70ec023cbe6a30c0f00d97899711a270fd0ad793aa64241"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/Updatable.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/Updatable.cpp",
+      "source_sha256": "e25f02ffaa3cdc4226d06fba20f8e0ff2e22cf3bb279b5ab2b5fe4583b6dc0e2",
+      "isolated_sha256": "acd64b70be7810de259afc2ff4304aecd6b39a6ba9022851639d349dcc65bfd0"
+    },
+    {
+      "upstream": "spine-cpp/spine-cpp/src/spine/VertexAttachment.cpp",
+      "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/runtime/VertexAttachment.cpp",
+      "source_sha256": "09a9bea897823af91a983b342ade09fc3c29ed80c5c59495997db50aaeec914a",
+      "isolated_sha256": "f7d76259987d3e6a1f32d7df1a0d07c6e06a112b8972698bc8a40987b900a1bd"
+    }
+  ]
+}

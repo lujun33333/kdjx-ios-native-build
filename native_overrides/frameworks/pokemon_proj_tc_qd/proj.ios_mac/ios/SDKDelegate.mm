@@ -33,7 +33,6 @@ void print_result()
         if (S[i]==',') continue;
         res.insert(res.begin() + i, S[i]);
     }
-    NSLog(@"SDKDelegate:proxy %s", res.c_str());
 }
 //////////////////// CONFUSE_CODE END
 
@@ -56,8 +55,6 @@ void print_result()
     print_result();
     //////////////////// CONFUSE_CODE_CALL END
 
-    NSLog(@"SDKDelegate:proxy ＋＋＋＋＋＋＋＋＋＋＋＋＋");
-    NSLog(@"%p %@ %d", sdk, fname, handlerID);
     if ([fname isEqual: @"login"]) {
         // 登陆
         sdk->login();
@@ -78,7 +75,6 @@ void print_result()
         // 刘海屏判断
         if (@available(iOS 11.0, *)) {
             CGFloat safeBottom = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom;
-            NSLog(@"safeBottom %f", safeBottom);
             if (safeBottom > 0) {
                 [self proxyCallback:sdk withData:@"1"];
             }else{
@@ -94,8 +90,6 @@ void print_result()
 
 +(void) proxyCallbackDelete: (SDKImpl *)sdk
 {
-    NSLog(@"SDKDelegate:proxyCallbackDelete ＋＋＋＋＋＋＋＋＋＋＋＋＋");
-    NSLog(@"%p %s %d", sdk, sdk->funcName.c_str(), sdk->handlerID);
     {
         std::lock_guard<std::mutex> lk(sdkreqs_mutex);
         sdkreqs.erase(sdk);
@@ -105,8 +99,6 @@ void print_result()
 
 +(std::vector<SDKImpl*>) getProxyCallbackByName: (NSString *)name;
 {
-    NSLog(@"SDKDelegate:getProxyCallbackByName ＋＋＋＋＋＋＋＋＋＋＋＋＋");
-    NSLog(@"%@", name);
 
     std::string fname = [name UTF8String];
     std::vector<SDKImpl*> ret;
@@ -126,7 +118,6 @@ void print_result()
 
 +(void) proxyCallback: (SDKImpl *) sdk withData:(NSString *)data
 {
-    NSLog(@"SDKDelegate:proxyCallback ＋＋＋＋＋＋＋＋＋＋＋＋＋");
 
 	bool isExisted = true;
 	{
@@ -141,7 +132,6 @@ void print_result()
 		NSLog(@"%p was be deleted!!!", sdk);
 		return;
 	}
-    NSLog(@"%p %s %d", sdk, sdk->funcName.c_str(), sdk->handlerID);
 
     int handlerID = sdk->handlerID;
     LuaStack *stack = LuaBridge::getStack();  //获取lua栈
