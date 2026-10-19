@@ -31,7 +31,8 @@
       "upstream": "spine-cocos2dx/spine-cocos2dx/src/spine/spine-cocos2dx.cpp",
       "path": "native_overrides/frameworks/pokemon_proj_tc_qd/Classes/spine41/renderer/spine-cocos2dx.cpp",
       "source_sha256": "c45c0534030483e261bb3bff2bf2233f4b2b6ee82238ced1332653a515cb8368",
-      "isolated_sha256": "f583906b16d162f70a6b5ee6c67d79164d5aaf52fba6cdf38223fac254c2e20d"
+      "isolated_sha256": "df5e4cf2c87d1e5e8e917eb1ae15d0379f83a4dd637c42e6d1d0b107c84cd133",
+      "local_adaptation": "Copy TJ-owned decoded file bytes into Spine-owned NUL-terminated allocation; preserve decoded length."
     },
     {
       "upstream": "spine-cocos2dx/spine-cocos2dx/src/spine/spine-cocos2dx.h",

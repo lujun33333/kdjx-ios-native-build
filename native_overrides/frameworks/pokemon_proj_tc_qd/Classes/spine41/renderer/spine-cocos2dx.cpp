@@ -27,6 +27,8 @@
  * SPINE RUNTIMES, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *****************************************************************************/
 
+#include <climits>
+#include <cstring>
 #include <spine41/Extension.h>
 #include <spine41/spine-cocos2dx.h>
 
@@ -132,21 +134,20 @@ Cocos2dExtension::Cocos2dExtension() : DefaultSpineExtension() {}
 Cocos2dExtension::~Cocos2dExtension() {}
 
 char *Cocos2dExtension::_readFile(const spine41::String &path, int *length) {
+	if (!length) return nullptr;
+	*length = 0;
 	Data data = FileUtils::getInstance()->getDataFromFile(path.buffer());
-	if (data.isNull()) return nullptr;
+	const ssize_t size = data.getSize();
+	if (data.isNull() || size <= 0 || size > INT_MAX) return nullptr;
 
-		// avoid buffer overflow (int is shorter than ssize_t in certain platforms)
-#if COCOS2D_VERSION >= 0x00031200
-	ssize_t tmpLen;
-	char *ret = (char *) data.takeBuffer(&tmpLen);
-	*length = static_cast<int>(tmpLen);
-	return ret;
-#else
-	*length = static_cast<int>(data.getSize());
-	auto bytes = SpineExtension::alloc<char>(*length, __FILE__, __LINE__);
-	memcpy(bytes, data.getBytes(), *length);
+	// FileUtils may return tj_malloc storage. Keep that owner in Data and
+	// return a separate Spine allocation for Atlas/Binary/JSON to free.
+	auto bytes = SpineExtension::alloc<char>(static_cast<size_t>(size) + 1, __FILE__, __LINE__);
+	if (!bytes) return nullptr;
+	memcpy(bytes, data.getBytes(), static_cast<size_t>(size));
+	bytes[size] = '\0';
+	*length = static_cast<int>(size);
 	return bytes;
-#endif
 }
 
 SpineExtension *spine41::getDefaultExtension() {
